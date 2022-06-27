@@ -6,12 +6,13 @@ const {ALL_USER} = require("../../const");
 
 const url = 'https://chat.googleapis.com/v1/spaces/AAAAYjXH928/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=gLz6UTxHLrqdWLqbhaXizpWlj67uxtc3G3UvvEOqNwA%3D'
 const message = `${ALL_USER} Chuẩn bị họp Daily!! \n
-            Họp không quá 15p. Và không thảo luận quá sâu để giải quyết vấn đề.\n Mọi người có thể họp riêng với nhau sau daily meeting. \n
-            Lưu ý theo format: \n 
-            1. Đã làm những gì ngày hôm trước? \n 
-            2. Sẽ làm những gì ngày hôm nay? \n 
-            3. Có vấn đề gì ảnh hưởng đến tiến độ. \n
-      `
+Họp không quá 15p. Và không thảo luận quá sâu để giải quyết vấn đề.\n Mọi người có thể họp riêng với nhau sau daily meeting. \n
+Lưu ý theo format: \n 
+1. Đã làm những gì ngày hôm trước? \n 
+2. Sẽ làm những gì ngày hôm nay? \n 
+3. Có vấn đề gì ảnh hưởng đến tiến độ. \n
+Link meet: https://meet.google.com/wje-cngw-yhb
+`
 
 const rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = [new schedule.Range(1, 5)];
